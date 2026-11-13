@@ -1,0 +1,40 @@
+# Dependências
+node_modules/
+
+# Arquivos gerados
+dist/
+build/
+www/
+
+# Android
+android/.gradle/
+android/.idea/
+android/build/
+android/app/build/
+android/local.properties
+android/.cxx/
+android/captures/
+
+# Aplicativos compilados
+*.apk
+*.aab
+
+# Arquivos de configuração pessoal
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Chaves privadas
+*.keystore
+*.jks
+*.key
+*.pem
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

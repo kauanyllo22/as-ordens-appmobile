@@ -1,0 +1,21 @@
+
+/* CONFIGURAÇÕES GERAIS DO APLICATIVO */
+
+:root {
+  --ion-background-color: #101b2d;
+  --ion-text-color: #ffffff;
+}
+
+/* Fundo padrão das telas */
+ion-content {
+  --background: #101b2d;
+  --color: #ffffff;
+}
+
+/* Configuração geral */
+* {
+  box-sizing: border-box;
+}
+
+/* Evita estilos globais que interfiram
+   nos títulos e textos das telas */

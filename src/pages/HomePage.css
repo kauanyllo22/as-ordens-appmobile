@@ -1,0 +1,169 @@
+
+/* CABEÇALHO */
+.topo-home {
+  --background: #1746a2;
+  --color: #ffffff;
+}
+
+.topo-home ion-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* FUNDO PRINCIPAL */
+.home-content {
+  --background: #101b2d;
+  --color: #ffffff;
+}
+
+/* CONTEÚDO DA HOME */
+.home-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 30px 20px 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* SAUDAÇÃO */
+.saudacao {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.saudacao h2 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.saudacao p {
+  color: #b8c4d8;
+  font-size: 14px;
+}
+
+/* RESUMO DOS CHAMADOS */
+.resumo-chamados {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+/* CARTÕES DE RESUMO */
+.card-resumo {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+
+  --background: #1d2b43;
+  --color: #ffffff;
+
+  background: #1d2b43;
+  border: 1px solid #30425e;
+  border-radius: 14px;
+
+  box-shadow: 0 3px 12px #00000020;
+}
+
+.card-resumo ion-card-content {
+  padding: 20px 10px;
+}
+
+.card-resumo ion-icon {
+  font-size: 28px;
+  color: #f1b83a;
+}
+
+.card-resumo h3 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.card-resumo p {
+  color: #b8c4d8;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* ÁREA DOS BOTÕES */
+.acoes-home {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.acoes-home ion-button {
+  height: 52px;
+  font-weight: bold;
+  --border-radius: 10px;
+  margin: 0;
+}
+
+/* BOTÃO ABRIR CHAMADOS */
+.botao-abrir {
+  --background: #1746a2;
+  --background-hover: #2059bd;
+  --color: #ffffff;
+}
+
+/* BOTÃO VER CHAMADOS */
+.botao-ver {
+  --background: transparent;
+  --color: #ffffff;
+  --border-color: #4779d1;
+  --border-width: 2px;
+}
+
+/* CAIXA DE AVISO */
+.aviso-home {
+  margin-top: 30px;
+  padding: 15px;
+
+  background: #292d32;
+  border-left: 4px solid #f1b83a;
+  border-radius: 8px;
+}
+
+.aviso-home p {
+  color: #d7deea;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* BOTÃO SAIR */
+.botao-sair {
+  margin-top: 25px;
+  align-self: center;
+  --color: #b8c4d8;
+}
+
+/* ADAPTAÇÃO PARA TELAS MENORES */
+@media (max-width: 360px) {
+  .home-container {
+    padding: 24px 14px 30px;
+  }
+
+  .saudacao h2 {
+    font-size: 22px;
+  }
+
+  .card-resumo ion-card-content {
+    padding: 16px 8px;
+  }
+
+  .card-resumo p {
+    font-size: 11px;
+  }
+}
