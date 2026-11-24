@@ -1,4 +1,4 @@
-package br.com.asordens.app;
+package com.asordens.app;
 
 import com.getcapacitor.BridgeActivity;
 

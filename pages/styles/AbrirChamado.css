@@ -1,0 +1,101 @@
+.chamado-page {
+  min-height: 100dvh;
+  background: var(--azul-escuro);
+  color: var(--branco);
+}
+
+.chamado-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--azul-royal);
+  padding: 22px 20px;
+  padding-top: calc(22px + env(safe-area-inset-top));
+}
+
+.chamado-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.chamado-header button {
+  position: absolute;
+  left: 20px;
+  background: transparent;
+  color: var(--branco);
+  border: none;
+  font-size: 28px;
+  padding: 5px;
+}
+
+.chamado-container {
+  max-width: 480px;
+  margin: auto;
+  padding: 24px 20px;
+}
+
+.chamado-container h2 {
+  margin: 0 0 10px;
+  font-size: 26px;
+}
+
+.chamado-subtitulo {
+  color: #aab7cc;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.chamado-page label {
+  display: block;
+  margin: 20px 0 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.chamado-page input,
+.chamado-page select,
+.chamado-page textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #465676;
+  border-radius: 10px;
+  background: var(--azul-card);
+  color: var(--branco);
+  font-size: 16px;
+  outline: none;
+}
+
+.chamado-page input:focus,
+.chamado-page select:focus,
+.chamado-page textarea:focus {
+  border-color: var(--dourado);
+}
+
+.chamado-page input::placeholder,
+.chamado-page textarea::placeholder {
+  color: #a8b1c2;
+}
+
+.chamado-page textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+#enviarChamado {
+  width: 100%;
+  margin-top: 28px;
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  background: var(--dourado);
+  color: var(--azul-escuro);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#mensagemChamado {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}

@@ -1,0 +1,196 @@
+.ver-chamados-page {
+  min-height: 100dvh;
+  background: var(--azul-escuro);
+  color: var(--branco);
+}
+
+.ver-chamados-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--azul-royal);
+  padding: 22px 20px;
+  padding-top: calc(22px + env(safe-area-inset-top));
+}
+
+.ver-chamados-header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.ver-chamados-header button {
+  position: absolute;
+  left: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+}
+
+.ver-chamados-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.ver-chamados-container h2 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+.ver-chamados-subtitulo {
+  color: #aab7cc;
+  margin-bottom: 24px;
+}
+
+.ver-chamados-container input,
+.ver-chamados-container select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #35445e;
+  border-radius: 10px;
+  background: var(--azul-card);
+  color: white;
+  font-size: 15px;
+  outline: none;
+  color-scheme: dark;
+}
+
+.ver-chamados-container input::placeholder {
+  color: #aab7cc;
+}
+
+.ver-chamados-container input:focus,
+.ver-chamados-container select:focus {
+  border-color: var(--dourado);
+}
+
+#quantidadeChamados {
+  font-size: 13px;
+  color: #aab7cc;
+  margin: 12px 0;
+}
+
+#listaChamados {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.chamado-card {
+  background: var(--azul-card);
+  border: 1px solid #293953;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow-wrap: anywhere;
+}
+
+.chamado-card-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.chamado-card .categoria {
+  font-size: 12px;
+  color: #aab7cc;
+}
+
+.chamado-card .titulo-chamado {
+  font-size: 19px;
+  margin: 16px 0 10px;
+}
+
+.chamado-card .descricao-chamado {
+  font-size: 14px;
+  color: #c5cede;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.chamado-card-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-top: 1px solid #35445e;
+  padding-top: 14px;
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+.chamado-card .data-chamado {
+  color: #aab7cc;
+}
+
+.status-chamado {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 6px 9px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.status-chamado.aberto {
+  background: #203c66;
+  color: #82b1ff;
+}
+
+.status-chamado.em_atendimento {
+  background: #4a3c20;
+  color: #f1b83a;
+}
+
+.status-chamado.aguardando_usuario {
+  background: #49351e;
+  color: #fb923c;
+}
+
+.status-chamado.resolvido {
+  background: #17432d;
+  color: #4ade80;
+}
+
+.status-chamado.fechado {
+  background: #354052;
+  color: #cbd5e1;
+}
+
+.prioridade-chamado.baixa {
+  color: #4ade80;
+}
+
+.prioridade-chamado.media {
+  color: #f1b83a;
+}
+
+.prioridade-chamado.alta {
+  color: #fb923c;
+}
+
+.prioridade-chamado.critica {
+  color: #f87171;
+}
+
+#atualizarChamados {
+  width: 100%;
+  padding: 16px;
+  margin-top: 24px;
+  background: var(--dourado);
+  color: var(--azul-escuro);
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.lista-vazia {
+  text-align: center;
+  padding: 30px 10px;
+  color: #aab7cc;
+}
